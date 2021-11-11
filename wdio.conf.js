@@ -133,8 +133,12 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: [['junit', {
-        outputDir: './reports'
-    }],['allure', {outputDir: 'allure-results'}]],
+        outputDir: './reports',
+        outputFileFormat:function (options){
+            return `results-${new Date().getTime()}.xml`;
+        }
+    }],
+        ['allure', {outputDir: 'allure-results'}]],
 
 
     

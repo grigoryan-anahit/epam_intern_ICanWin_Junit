@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="pastebin application" timestamp="2021-11-11T16:06:46" time="4.512" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="pastebin application"/>
+      <property name="capabilities" value="chrome.95_0_4638_69.windows"/>
+      <property name="file" value=".\test\specs\pastebin.test.js"/>
+    </properties>
+    <testcase classname="chrome.95_0_4638_69.windows.pastebin_application" name="should set values" time="4.511">
+      <system-out><![CDATA[
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/url - {"url":"https://pastebin.com/"}
+RESULT: {"url":"https://pastebin.com/"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element - {"using":"css selector","value":"#postform-text"}
+RESULT: {"using":"css selector","value":"#postform-text"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/f3a1d426-8362-40fa-ac93-d68b4d2f74b6/clear - {}
+RESULT: {}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/f3a1d426-8362-40fa-ac93-d68b4d2f74b6/value - {"text":"Hello from WebDriver"}
+RESULT: {"text":"Hello from WebDriver"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element - {"using":"css selector","value":"#select2-postform-expiration-container"}
+RESULT: {"using":"css selector","value":"#select2-postform-expiration-container"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/execute/sync - {"script":"return (function (elem, options) {\n        elem.scrollIntoView(options);\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ab95bb09-102b-4dda-9e2e-81431335d79d","ELEMENT":"ab95bb09-102b-4dda-9e2e-81431335d79d"},{"block":"center"}]}
+RESULT: {"script":"return (function (elem, options) {\n        elem.scrollIntoView(options);\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ab95bb09-102b-4dda-9e2e-81431335d79d","ELEMENT":"ab95bb09-102b-4dda-9e2e-81431335d79d"},{"block":"center"}]}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element - {"using":"css selector","value":"#select2-postform-expiration-container"}
+RESULT: {"using":"css selector","value":"#select2-postform-expiration-container"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/ab95bb09-102b-4dda-9e2e-81431335d79d/click - {}
+RESULT: {}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element - {"using":"css selector","value":"#select2-postform-expiration-results"}
+RESULT: {"using":"css selector","value":"#select2-postform-expiration-results"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/c2b00acb-dd80-49c2-8188-452b741f7e4c/elements - {"using":"css selector","value":"li"}
+RESULT: {"using":"css selector","value":"li"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/bdff0cde-efd0-495e-9b52-0714e2a24030/click - {}
+RESULT: {}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element - {"using":"css selector","value":"#postform-name"}
+RESULT: {"using":"css selector","value":"#postform-name"}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/b27ec06e-e287-4fd5-a4f1-75a5097c9dea/clear - {}
+RESULT: {}
+COMMAND: POST /session/e984fa6bca035f6a5795f71dc0c5a577/element/b27ec06e-e287-4fd5-a4f1-75a5097c9dea/value - {"text":"helloweb"}
+RESULT: {"text":"helloweb"}
+COMMAND: DELETE /session/e984fa6bca035f6a5795f71dc0c5a577 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
